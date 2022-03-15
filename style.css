@@ -59,8 +59,29 @@ h1 {
 .portada {
   display: flex;
   flex-wrap: wrap;
-  margin: 2rem;
+  margin: 0.5rem;
   justify-content: space-around;
+}
+.imagen1 {
+  transition: all 0.7s;
+}
+
+.imagen1:hover {
+  transform: scale(1.1, 1.1);
+}
+.imagen2 {
+  transition: all 0.7s;
+}
+
+.imagen2:hover {
+  transform: scale(1.1, 1.1);
+}
+.imagen3 {
+  transition: all 0.7s;
+}
+
+.imagen3:hover {
+  transform: scale(1.1, 1.1);
 }
 /* Letras de bienvenida con texto con gradiente de color  */
 .bienvenida {
@@ -76,7 +97,23 @@ h1 {
   background: linear-gradient(to right, #406eed 0%, #e8933f 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  /* animacion */
+  animation-duration: 2s;
+  animation-name: aparecer;
+  animation-iteration-count: infinite;
 }
+@keyframes aparecer {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+/* TERMINA ANIMACION */
 /* Texto */
 h2 {
   color: white;
@@ -124,8 +161,9 @@ legend {
 }
 /* Promociones */
 .promociones {
-  margin-top: 10rem;
+  margin-top: 3rem;
   overflow: auto;
+  z-index: -1;
 }
 /* USO DE GRIDS */
 .contenedor {
@@ -190,12 +228,10 @@ footer {
   width: 100%;
   margin: 0 auto;
   margin-bottom: 10px;
-  background: rgb(199, 134, 11);
-  background: linear-gradient(
-    83deg,
-    rgba(199, 134, 11, 1) 0%,
-    rgba(238, 236, 9, 1) 100%
-  );
+  background: #406eed;
+  background: -webkit-linear-gradient(to right, #406eed 0%, #e8933f 100%);
+  background: -moz-linear-gradient(to right, #406eed 0%, #e8933f 100%);
+  background: linear-gradient(to right, #406eed 0%, #e8933f 100%);
 }
 .sucursales {
   margin-left: 5rem;
