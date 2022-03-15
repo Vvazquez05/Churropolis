@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./images/icon_churropolis/favicon-32x32.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Courier+Prime:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Log in</title>
+</head>
+<body>
+    <!-- Encabezado de la página -->
+    <header>
+        <div class="logoPrincipal">
+            <img class="Logo" id="logotipoImagen" src="./images/mainLogo_churros.PNG" alt="Logo de la empresa" width="400">
+        </div>
+        <br>
+        <!-- Lista de menú de navegación, -->
+            <nav>
+                <ul class="menu">
+                    <li><a href="./index.html">Inicio</a></li>
+                    <li><a href="./promociones.html">Promociones</a></li>
+                    <li><a href="./menu.html">Menú</a></li>
+                    <li><a href="./sucursales.html">Sucursales</a></li>
+                    <li><a href="./somos.html">¿Quienes somos?</a></li>
+                </ul>
+            </nav>
+        <div  class="boton">
+            <a href="./formulario.html"><input type="button" value="INGRESAR" ></a>
+        </div>
+    </header>
+    <!-- FORMULARIO, ESTE FORMULARIO IRIA EN OTRO HTML, PERO POR INSTRUCCIONES D ELA MAESTRA POR EL MOMENTO SE MANDA EL INDEX -->
+    <section>
+        <h1 class="tituloFormulario">
+            <strong>
+                Ingresa los siguientes datos para dar de alta tu cuenta
+            </strong>
+        </h1>    
+        <fieldset>
+            <legend>Datos</legend>
+            <form action="">
+                <div>
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" name="nombre" placeholder="Inserte nombre">
+                </div>
+                <br>
+                <div>
+                    <label for="apellidoP">Apellido Paterno</label>
+                    <input type="text" name="apellidoP" placeholder="Inserta apellido paterno">
+                </div>
+                <br>
+                <div>
+                    <label for="apellidom">Apellido Materno</label>
+                    <input type="text" name="apellidom" placeholder="Inserte apellido materno">
+                </div>
+                <br>
+                <div>
+                    <label for="correo">Correo electrónico *</label>
+                    <input type="email" name="email" placeholder="example@email.com" required>
+                </div>
+                <br>
+                <div>
+                    <label for="password">Contraseña *</label>
+                    <input type="password" name="password" placeholder="Inserte contraseña" required>
+                </div>
+                <br>
+                <div>
+                    <label for="edad">Edad</label>
+                    <select name="edad" id="">
+                        <option value="Menor_edad">Menor de 18 años</option>
+                        <option value="18_30">Entre 18 a 30 años</option>
+                        <option value="30_45">Entre 30 a 45 años</option>
+                        <option value="45_adelante">Mayor 45 años</option>
+                    </select>
+                </div>
+                <br>
+                <div>
+                    <label style="color: white" for="comenatio">Escribe acerca de ti</label>
+                    <br>
+                    <textarea name="comentario" id="" cols="30" rows="10" locksize="true"></textarea>
+                </div>
+                <br>
+                <div>
+                    <label>Acepto los términos</label>
+                    <input type="radio" name="Acepto" value="acepto">
+                </div>
+                <br>
+                <div>
+                    <input type="submit" value="Enviar">
+                </div>
+                <br>
+                <div>
+                    <input type="reset" value="Borrar">
+                </div>
+            </form>
+        </fieldset>
+    </section>
+    <!-- FOOTER -->
+    <footer>
+        <h3>
+            Contactanos
+        </h3>
+        <h3>
+            📱 Teléfono: 312-xxx-xxxx
+            <br>
+            🖨 @mail: churropolis_comida@example.com
+        </h3>
+    </footer>
+</body>
+</html>

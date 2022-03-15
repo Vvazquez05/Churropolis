@@ -1,0 +1,360 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* Fondo oscuro */
+body {
+  background-color: black;
+}
+/* Logotipo y barra de nevagación */
+header {
+  background-color: black;
+  position: sticky;
+  top: 0px;
+}
+/* Logotipo */
+.logoPrincipal {
+  display: flex;
+  justify-content: center;
+  top: 5px;
+}
+/* NAVEGACION */
+nav {
+  border-radius: 10px;
+  margin: 1rem auto;
+}
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 5%;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+nav ul a {
+  color: white;
+  font-family: "Courgette", cursive;
+  text-decoration: none;
+  font-size: 2rem;
+}
+nav ul a:hover {
+  background-color: black;
+  color: yellow;
+  font-weight: bold;
+}
+/* Boton para ingresar al formulario */
+.boton {
+  position: absolute;
+  top: 50%;
+  left: 90%;
+}
+/* Titulos */
+h1 {
+  color: yellow;
+  font-size: 5rem;
+  text-align: center;
+  font-family: "Fredoka One", cursive;
+}
+/* Imagen de bienvenida */
+.portada {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 2rem;
+  justify-content: space-around;
+}
+/* Letras de bienvenida con texto con gradiente de color  */
+.bienvenida {
+  padding: 2rem;
+  margin: 2rem;
+  color: rgb(243, 0, 0);
+  text-align: center;
+  font-family: "Fredoka One", cursive;
+  font-size: 4rem;
+  background: #406eed;
+  background: -webkit-linear-gradient(to right, #406eed 0%, #e8933f 100%);
+  background: -moz-linear-gradient(to right, #406eed 0%, #e8933f 100%);
+  background: linear-gradient(to right, #406eed 0%, #e8933f 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+/* Texto */
+h2 {
+  color: white;
+  text-align: center;
+  margin: 1rem;
+  font-size: 2rem;
+}
+/* Texto */
+h4 {
+  color: white;
+  font-family: "Courier Prime", monospace;
+  margin: 5rem 3rem;
+  word-spacing: 2px;
+  line-height: 1.5;
+  font-size: 1.5rem;
+  text-align: justify;
+}
+/* Titulo de formulario */
+.tituloFormulario {
+  width: 40rem;
+  margin: 1rem;
+  padding: 1rem;
+  color: white;
+  font-family: "Courier Prime", monospace;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  text-align: start;
+  background-color: grey;
+}
+/* Etiquetas de formulario */
+label {
+  color: white;
+}
+/* Nombre del formulario */
+legend {
+  color: white;
+  font-size: 1.5rem;
+  margin: 1rem;
+}
+/* Texto de tabla de menu */
+.comida {
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+/* Promociones */
+.promociones {
+  margin-top: 10rem;
+  overflow: auto;
+}
+/* USO DE GRIDS */
+.contenedor {
+  width: 90%;
+  margin: 20px auto;
+  display: grid;
+  grid-template-columns: 0.5fr 1fr;
+  grid-template-rows: 1fr 3fr 1fr 3fr 1fr 3fr;
+  grid-template-areas:
+    "valentin valentin"
+    "imgValentin descValentin"
+    "alone alone"
+    "imgAlone descAlone"
+    "familia familia"
+    "imgFamilia descFamilia";
+}
+.valentin {
+  font-size: 3rem;
+  color: yellow;
+  text-decoration: underline;
+  grid-area: valentin;
+}
+.imgValentin {
+  grid-area: imgValentin;
+}
+.descValentin {
+  grid-area: descValentin;
+}
+.alone {
+  font-size: 3rem;
+  color: yellow;
+  text-decoration: underline;
+  grid-area: alone;
+}
+.imgAlone {
+  grid-area: imgAlone;
+}
+.descAlone {
+  grid-area: descAlone;
+}
+.familia {
+  font-size: 3rem;
+  color: yellow;
+  text-decoration: underline;
+  grid-area: familia;
+}
+.imgFamilia {
+  grid-area: imgFamilia;
+}
+.descFamilia {
+  grid-area: descFamilia;
+}
+/* Footer */
+h3 {
+  display: block;
+  margin: 0.5rem 2rem;
+  text-align: center;
+  color: rgba(64, 37, 8);
+  font-size: 1.5rem;
+}
+footer {
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  background: rgb(199, 134, 11);
+  background: linear-gradient(
+    83deg,
+    rgba(199, 134, 11, 1) 0%,
+    rgba(238, 236, 9, 1) 100%
+  );
+}
+.sucursales {
+  margin-left: 5rem;
+}
+.sucursales ol {
+  color: white;
+  margin: 2rem;
+  font-size: 2rem;
+}
+
+/* USO DE GRID EN INDEX */
+.pagIndex {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(4, auto);
+  grid-template-areas:
+    "header"
+    "bienvenida"
+    "portada"
+    "footer";
+}
+.header {
+  grid-area: header;
+}
+.portada {
+  grid-area: portada;
+}
+.bienvenida {
+  grid-area: bienvenida;
+}
+
+.footer {
+  grid-area: footer;
+}
+/* USO DE GRID EN PROMOCIONES */
+.pagPromo {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, auto);
+  grid-template-areas:
+    "header"
+    "promociones"
+    "footer";
+}
+
+.pagMenu {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, auto);
+  grid-template-areas:
+    "header"
+    "comida"
+    "footer";
+}
+.comida {
+  grid-area: comida;
+}
+.pagSuc {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-template-rows: repeat(4, auto);
+  grid-template-areas:
+    "header header"
+    "tiSuc tiSuc"
+    "sucursales mapa"
+    "footer footer";
+}
+.tiSuc {
+  grid-area: tiSuc;
+}
+.sucursales {
+  grid-area: sucursales;
+}
+.mapa {
+  margin: 2rem;
+  grid-area: mapa;
+}
+.pagSomos {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(7, auto);
+  grid-template-areas:
+    "header"
+    "tiSomos"
+    "objetivo"
+    "descObjetivo"
+    "mision"
+    "descMision"
+    "footer";
+}
+.tiSomos {
+  grid-area: tiSomos;
+}
+.objetivo {
+  grid-area: objetivo;
+}
+.descObjetivo {
+  grid-area: descObjetivo;
+}
+.mision {
+  grid-area: mision;
+}
+.descMision {
+  grid-area: descMision;
+}
+@media screen and (max-width: 700px) {
+  .pagIndex {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas:
+      "header"
+      "bienvenida"
+      "portada"
+      "footer";
+  }
+
+  .contenedor {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(9, auto);
+    grid-template-areas:
+      "valentin"
+      "imgValentin"
+      "descValentin"
+      "alone"
+      "imgAlone"
+      "descAlone"
+      "familia"
+      "imgFamilia"
+      "descFamilia";
+  }
+  .imgAlone {
+    justify-self: center;
+    align-self: center;
+  }
+  .imgValentin {
+    justify-self: center;
+    align-self: center;
+  }
+  .imgFamilia {
+    justify-self: center;
+    align-self: center;
+  }
+  .pagSuc {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, auto);
+    grid-template-areas:
+      "header"
+      "tiSuc"
+      "sucursales"
+      "mapa"
+      "footer";
+  }
+  .sucursales {
+    justify-self: center;
+  }
+  .sucursales {
+    justify-self: center;
+  }
+}
