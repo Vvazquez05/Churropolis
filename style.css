@@ -12,6 +12,7 @@ header {
   background-color: black;
   position: sticky;
   top: 0px;
+  z-index: 2;
 }
 /* Logotipo */
 .logoPrincipal {
@@ -20,7 +21,7 @@ header {
   top: 5px;
 }
 /* NAVEGACION */
-nav {
+/* nav {
   border-radius: 10px;
   margin: 1rem auto;
 }
@@ -41,7 +42,7 @@ nav ul a:hover {
   background-color: black;
   color: yellow;
   font-weight: bold;
-}
+} */
 /* Boton para ingresar al formulario */
 .boton {
   position: absolute;
@@ -59,10 +60,10 @@ h1 {
 .portada {
   display: flex;
   flex-wrap: wrap;
-  margin: 0.5rem;
   justify-content: space-around;
 }
 .imagen1 {
+  margin: 1rem;
   transition: all 0.7s;
 }
 
@@ -70,6 +71,7 @@ h1 {
   transform: scale(1.1, 1.1);
 }
 .imagen2 {
+  margin: 1rem;
   transition: all 0.7s;
 }
 
@@ -77,6 +79,7 @@ h1 {
   transform: scale(1.1, 1.1);
 }
 .imagen3 {
+  margin: 1rem;
   transition: all 0.7s;
 }
 
@@ -85,7 +88,6 @@ h1 {
 }
 /* Letras de bienvenida con texto con gradiente de color  */
 .bienvenida {
-  padding: 2rem;
   margin: 2rem;
   color: rgb(243, 0, 0);
   text-align: center;
