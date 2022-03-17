@@ -69,71 +69,36 @@
             </nav>
     </header>
     <!-- FORMULARIO, ESTE FORMULARIO IRIA EN OTRO HTML, PERO POR INSTRUCCIONES D ELA MAESTRA POR EL MOMENTO SE MANDA EL INDEX -->
-    <section>
-        <h1 class="tituloFormulario">
-            <strong>
-                Ingresa los siguientes datos para dar de alta tu cuenta
-            </strong>
-        </h1>    
-        <fieldset>
-            <legend>Datos</legend>
-            <form action="">
-                <div>
-                    <label for="nombre">Nombre:</label>
-                    <input type="text" name="nombre" placeholder="Inserte nombre">
-                </div>
-                <br>
-                <div>
-                    <label for="apellidoP">Apellido Paterno</label>
-                    <input type="text" name="apellidoP" placeholder="Inserta apellido paterno">
-                </div>
-                <br>
-                <div>
-                    <label for="apellidom">Apellido Materno</label>
-                    <input type="text" name="apellidom" placeholder="Inserte apellido materno">
-                </div>
-                <br>
-                <div>
-                    <label for="correo">Correo electrónico *</label>
-                    <input type="email" name="email" placeholder="example@email.com" required>
-                </div>
-                <br>
-                <div>
-                    <label for="password">Contraseña *</label>
-                    <input type="password" name="password" placeholder="Inserte contraseña" required>
-                </div>
-                <br>
-                <div>
-                    <label for="edad">Edad</label>
-                    <select name="edad" id="">
-                        <option value="Menor_edad">Menor de 18 años</option>
-                        <option value="18_30">Entre 18 a 30 años</option>
-                        <option value="30_45">Entre 30 a 45 años</option>
-                        <option value="45_adelante">Mayor 45 años</option>
-                    </select>
-                </div>
-                <br>
-                <div>
-                    <label style="color: white" for="comenatio">Escribe acerca de ti</label>
-                    <br>
-                    <textarea name="comentario" id="" cols="30" rows="10" locksize="true"></textarea>
-                </div>
-                <br>
-                <div>
-                    <label>Acepto los términos</label>
-                    <input type="radio" name="Acepto" value="acepto">
-                </div>
-                <br>
-                <div>
-                    <input type="submit" value="Enviar">
-                </div>
-                <br>
-                <div>
-                    <input type="reset" value="Borrar">
-                </div>
-            </form>
-        </fieldset>
-    </section>
+    <form>
+        <div class="mb-3 w-25">
+            <label for="exampleInputEmail1" class="form-label">Nombre (s)</label>
+            <input type="label" class="form-control" id="nombre" aria-describedby="nombre">
+            <div id="emailHelp" class="form-text">Ingrese nombre.</div>
+        </div>
+        <div class="mb-3 w-25">
+            <label for="exampleInputPassword1" class="form-label">Ingrese apellido paterno</label>
+            <input type="label" class="form-control" id="apellido_paterno">
+        </div>
+        <div class="mb-3 w-25">
+            <label for="exampleInputPassword1" class="form-label">Ingrese apellido materno</label>
+            <input type="label" class="form-control" id="apellido_materno">
+        </div>
+        <div class="mb-3 w-25">
+            <label for="exampleInputEmail1" class="form-label">correo electrónico</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <div id="emailHelp" class="form-text">Nunca revele su correo electrónico.</div>
+        </div>
+        <label for="inputPassword5" class="form-label">Contraseña</label>
+        <input type="password" id="inputPassword5" class="form-control w-25" aria-describedby="passwordHelpBlock">
+        <div id="passwordHelpBlock" class="form-text">
+            La contraseña debe detener de 8 a 20 caracteres de longitud, contener letras y numeros, y no contener espacios.
+        </div>
+        <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">Estoy de acuerdo</label>
+        </div>
+        <button type="submit" class="btn btn-primary">enviar</button>
+    </form>
     <!-- FOOTER -->
     <footer>
         <h3>
