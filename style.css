@@ -167,56 +167,7 @@ legend {
   z-index: -1;
 }
 /* USO DE GRIDS */
-.contenedor {
-  width: 90%;
-  margin: 20px auto;
-  display: grid;
-  grid-template-columns: 0.5fr 1fr;
-  grid-template-rows: 1fr 3fr 1fr 3fr 1fr 3fr;
-  grid-template-areas:
-    "valentin valentin"
-    "imgValentin descValentin"
-    "alone alone"
-    "imgAlone descAlone"
-    "familia familia"
-    "imgFamilia descFamilia";
-}
-.valentin {
-  font-size: 3rem;
-  color: yellow;
-  text-decoration: underline;
-  grid-area: valentin;
-}
-.imgValentin {
-  grid-area: imgValentin;
-}
-.descValentin {
-  grid-area: descValentin;
-}
-.alone {
-  font-size: 3rem;
-  color: yellow;
-  text-decoration: underline;
-  grid-area: alone;
-}
-.imgAlone {
-  grid-area: imgAlone;
-}
-.descAlone {
-  grid-area: descAlone;
-}
-.familia {
-  font-size: 3rem;
-  color: yellow;
-  text-decoration: underline;
-  grid-area: familia;
-}
-.imgFamilia {
-  grid-area: imgFamilia;
-}
-.descFamilia {
-  grid-area: descFamilia;
-}
+
 /* Footer */
 h3 {
   display: block;
@@ -268,15 +219,6 @@ footer {
   grid-area: footer;
 }
 /* USO DE GRID EN PROMOCIONES */
-.pagPromo {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: repeat(3, auto);
-  grid-template-areas:
-    "header"
-    "promociones"
-    "footer";
-}
 
 .pagMenu {
   display: grid;
