@@ -20,31 +20,7 @@ header {
   justify-content: center;
   top: 5px;
 }
-/* NAVEGACION */
-/* nav {
-  border-radius: 10px;
-  margin: 1rem auto;
-}
-nav ul {
-  display: flex;
-  list-style: none;
-  gap: 5%;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-nav ul a {
-  color: white;
-  font-family: "Courgette", cursive;
-  text-decoration: none;
-  font-size: 2rem;
-}
-nav ul a:hover {
-  background-color: black;
-  color: yellow;
-  font-weight: bold;
-} */
-/* Boton para ingresar al formulario */
-
+/* Apartado de navegacion */
 nav ul li:hover {
   background-color: rgb(117, 36, 3);
 }
@@ -99,7 +75,7 @@ h1 {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   /* animacion */
-  animation-duration: 2s;
+  animation-duration: 3s;
   animation-name: aparecer;
   animation-iteration-count: infinite;
 }
