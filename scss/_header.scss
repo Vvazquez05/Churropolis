@@ -1,0 +1,20 @@
+header{
+    background-color: $bg-fondo;
+    position: sticky;
+    top: 0px;
+    z-index: 2;
+    .logoPrincipal{
+        display: flex;
+        justify-content: center;
+        top: 5px;
+    }
+    nav{
+        ul{
+            li{
+                &:hover{
+                    background-color: $bg-nav;
+                }
+            }
+        }
+    }
+}

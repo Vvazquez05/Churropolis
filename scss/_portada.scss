@@ -1,0 +1,54 @@
+.bienvenida{
+    margin: 2rem;
+  color: rgb(243, 0, 0);
+  text-align: center;
+  font-family: "Fredoka One", cursive;
+  font-size: 4rem;
+  background: #406eed;
+  background: -webkit-linear-gradient(to right, #406eed 0%, #e8933f 100%);
+  background: -moz-linear-gradient(to right, #406eed 0%, #e8933f 100%);
+  background: linear-gradient(to right, #406eed 0%, #e8933f 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  /* animacion */
+  animation-duration: 3s;
+  animation-name: aparecer;
+  animation-iteration-count: infinite;
+  @keyframes aparecer {
+    0% {
+        opacity: 0;
+      }
+      50% {
+        opacity: 1;
+      }
+      100% {
+        opacity: 0;
+      }
+  }
+}
+.portada{
+    display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  .imagen1{
+    margin: 1rem;
+    transition: all 0.7s;
+    &:hover{
+        transform: scale(1.1, 1.1);
+    }
+  }
+  .imagen2{
+    margin: 1rem;
+    transition: all 0.7s;
+    &:hover{
+        transform: scale(1.1, 1.1);
+    }
+  }
+  .imagen3{
+    margin: 1rem;
+    transition: all 0.7s;
+    &:hover{
+        transform: scale(1.1, 1.1);
+    }
+  }
+}

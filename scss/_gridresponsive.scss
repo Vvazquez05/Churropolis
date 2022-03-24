@@ -1,0 +1,24 @@
+
+.pagIndex{
+    display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(4, auto);
+  grid-template-areas:
+    "header"
+    "bienvenida"
+    "portada"
+    "footer";
+    .header {
+        grid-area: header;
+      }
+      .portada {
+        grid-area: portada;
+      }
+      .bienvenida {
+        grid-area: bienvenida;
+      }
+      
+      .footer {
+        grid-area: footer;
+      }
+}

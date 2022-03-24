@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  background-color: black; }
+
+header {
+  background-color: black;
+  position: sticky;
+  top: 0px;
+  z-index: 2; }
+  header .logoPrincipal {
+    display: flex;
+    justify-content: center;
+    top: 5px; }
+  header nav ul li:hover {
+    background-color: #752403; }
+
+.bienvenida {
+  margin: 2rem;
+  color: #f30000;
+  text-align: center;
+  font-family: "Fredoka One", cursive;
+  font-size: 4rem;
+  background: #406eed;
+  background: -webkit-linear-gradient(to right, #406eed 0%, #e8933f 100%);
+  background: -moz-linear-gradient(to right, #406eed 0%, #e8933f 100%);
+  background: linear-gradient(to right, #406eed 0%, #e8933f 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  /* animacion */
+  animation-duration: 3s;
+  animation-name: aparecer;
+  animation-iteration-count: infinite; }
+
+@keyframes aparecer {
+  0% {
+    opacity: 0; }
+  50% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+
+.portada {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around; }
+  .portada .imagen1 {
+    margin: 1rem;
+    transition: all 0.7s; }
+    .portada .imagen1:hover {
+      transform: scale(1.1, 1.1); }
+  .portada .imagen2 {
+    margin: 1rem;
+    transition: all 0.7s; }
+    .portada .imagen2:hover {
+      transform: scale(1.1, 1.1); }
+  .portada .imagen3 {
+    margin: 1rem;
+    transition: all 0.7s; }
+    .portada .imagen3:hover {
+      transform: scale(1.1, 1.1); }
+
+footer {
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  background: #406eed;
+  background: -webkit-linear-gradient(to right, #406eed 0%, #e8933f 100%);
+  background: -moz-linear-gradient(to right, #406eed 0%, #e8933f 100%);
+  background: linear-gradient(to right, #406eed 0%, #e8933f 100%); }
+
+.pagIndex {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(4, auto);
+  grid-template-areas: "header" "bienvenida" "portada" "footer"; }
+  .pagIndex .header {
+    grid-area: header; }
+  .pagIndex .portada {
+    grid-area: portada; }
+  .pagIndex .bienvenida {
+    grid-area: bienvenida; }
+  .pagIndex .footer {
+    grid-area: footer; }
