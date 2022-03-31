@@ -26,29 +26,34 @@
       }
   }
 }
+// Clase que se usará en Extend
+.imagen{
+  margin: 1rem;
+  transition: all 0.7s;
+}
+
+// Clase que se usará para mixing con parámetro
+@mixin complemento_imagen($pixel, $color_border, $tipo_border, $escala_x, $escala_y) {
+  border: $pixel $color_border $tipo_border;
+    &:hover{
+        transform: scale($escala_x, $escala_y);
+    }
+}
 .portada{
     display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  // Usando Extend
   .imagen1{
-    margin: 1rem;
-    transition: all 0.7s;
-    &:hover{
-        transform: scale(1.1, 1.1);
-    }
+    @extend .imagen;
+    @include complemento_imagen(3px, white, solid, 1.1, 1.5)
   }
   .imagen2{
-    margin: 1rem;
-    transition: all 0.7s;
-    &:hover{
-        transform: scale(1.1, 1.1);
-    }
+    @extend .imagen;
+    @include complemento_imagen(5px, yellow, dotted, 1.2, 1.2)
   }
   .imagen3{
-    margin: 1rem;
-    transition: all 0.7s;
-    &:hover{
-        transform: scale(1.1, 1.1);
+    @extend .imagen;
+    @include complemento_imagen(5px, red, solid, 1.1, 1.1)
     }
-  }
 }

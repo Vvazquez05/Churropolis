@@ -43,23 +43,24 @@ header {
   100% {
     opacity: 0; } }
 
+.imagen, .portada .imagen1, .portada .imagen2, .portada .imagen3 {
+  margin: 1rem;
+  transition: all 0.7s; }
+
 .portada {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around; }
   .portada .imagen1 {
-    margin: 1rem;
-    transition: all 0.7s; }
+    border: 3px white solid; }
     .portada .imagen1:hover {
-      transform: scale(1.1, 1.1); }
+      transform: scale(1.1, 1.5); }
   .portada .imagen2 {
-    margin: 1rem;
-    transition: all 0.7s; }
+    border: 5px yellow dotted; }
     .portada .imagen2:hover {
-      transform: scale(1.1, 1.1); }
+      transform: scale(1.2, 1.2); }
   .portada .imagen3 {
-    margin: 1rem;
-    transition: all 0.7s; }
+    border: 5px red solid; }
     .portada .imagen3:hover {
       transform: scale(1.1, 1.1); }
 
