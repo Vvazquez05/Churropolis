@@ -1,0 +1,92 @@
+// Estilo de fuente de títulos de la página
+h1 {
+    color: yellow;
+    font-size: 5rem;
+    text-align: center;
+    font-family: $font_titulo;
+    }
+h2{
+    color:white;
+    text-align: center;
+    margin: 1rem;
+    font-size: 2rem;
+}
+h3 {
+    display: block;
+    margin: 0.5rem 2rem;
+    text-align: center;
+    color: #402508;
+    font-size: 1.5rem;
+    }
+h4{
+    color: white;
+    font-family: $font_text;
+    margin: 5rem 3rem;
+    word-spacing: 2px;
+    line-height: 1.5;
+    font-size: 1.8rem;
+    text-align: justify;
+}
+// Estilo de fuente de página de Promociones
+.promoTitulo{
+    font-family:$font_titulo;
+    font-weight: bold;
+    font-size: 2rem;
+    color: rgb(255, 9, 9);
+    text-align: center;
+}
+.subtexto {
+    font-family: $font_text;
+    font-size: 1.5rem;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    }
+.subtitulo {
+    font-family: $font_titulo;
+    font-size: 1.8rem;
+    color: yellow;
+    text-align: center;
+    }
+// Estilo de fuente de página Formulario
+.tituloFormulario{
+    width: 40rem;
+    margin: 1rem;
+    padding: 1rem;
+    color: white;
+    font-family: $font_text;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    text-align: start;
+    background-color: grey;
+}
+label {
+    color: white;
+    }
+  /* Nombre del formulario */
+legend {
+    color: white;
+    font-size: 1.5rem;
+    margin: 1rem;
+    }
+/* Texto de tabla de menu */
+.comida {
+    color: white;
+    display: flex;
+    justify-content: center;
+    }
+  /* Promociones */
+.promociones {
+    margin-top: 3rem;
+    overflow: auto;
+    z-index: -1;
+    }
+td{
+    color: white;
+    font-family: $font_text;
+    font-size: 1.5rem;
+}
+th{
+    color: yellow;
+    font-family: $font_text;
+    font-size: 2rem;
+}

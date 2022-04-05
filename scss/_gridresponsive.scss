@@ -22,3 +22,75 @@
         grid-area: footer;
       }
 }
+.pagMenu {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, auto);
+  grid-template-areas:
+    "header"
+    "comida"
+    "footer";
+    .header {
+      grid-area: header;
+    }
+    .comida {
+    grid-area: comida;
+    }
+    .footer {
+      grid-area: footer;
+    }
+}
+.pagSuc {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-template-rows: repeat(4, auto);
+  grid-template-areas:
+    "header header"
+    "tiSuc tiSuc"
+    "sucursales mapa"
+    "footer footer";
+    .header {
+      grid-area: header;
+    }
+    .tiSuc {
+      grid-area: tiSuc;
+    }
+    .sucursales {
+      grid-area: sucursales;
+    }
+    .mapa {
+      margin: 2rem;
+      grid-area: mapa;
+    }
+    .footer {
+      grid-area: footer;
+    }
+}
+.pagSomos {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(7, auto);
+  grid-template-areas:
+    "header"
+    "tiSomos"
+    "objetivo"
+    "descObjetivo"
+    "mision"
+    "descMision"
+    "footer";
+.tiSomos {
+  grid-area: tiSomos;
+}
+.objetivo {
+  grid-area: objetivo;
+}
+.descObjetivo {
+  grid-area: descObjetivo;
+}
+.mision {
+  grid-area: mision;
+}
+.descMision {
+  grid-area: descMision;
+}
+}

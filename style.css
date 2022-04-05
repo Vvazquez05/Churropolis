@@ -63,7 +63,7 @@ h1 {
 }
 /* Letras de bienvenida con texto con gradiente de color  */
 .bienvenida {
-  margin: 2rem;
+  margin: 0.5rem;
   color: rgb(243, 0, 0);
   text-align: center;
   font-family: "Fredoka One", cursive;
@@ -105,8 +105,28 @@ h4 {
   margin: 5rem 3rem;
   word-spacing: 2px;
   line-height: 1.5;
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   text-align: justify;
+}
+/* Menu */
+.promoTitulo{
+  font-family:"Fredoka One",cursive;
+  font-weight: bold;
+  font-size: 2rem;
+  color: rgb(255, 9, 9);
+  text-align: center;
+}
+.subtitulo {
+  font-family: "Fredoka One",cursive;
+  font-size: 1.8rem;
+  color: yellow;
+  text-align: center;
+}
+.subtexto {
+  font-family: "Courier Prime",monospace;
+  font-size: 1.5rem;
+  color: rgb(255, 255, 255);
+  text-align: center;
 }
 /* Titulo de formulario */
 .tituloFormulario {

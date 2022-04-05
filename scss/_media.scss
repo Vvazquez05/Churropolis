@@ -1,0 +1,57 @@
+@media screen and (max-width: 700px) {
+    .pagIndex {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(4, auto);
+      grid-template-areas:
+        "header"
+        "bienvenida"
+        "portada"
+        "footer";
+    }
+  
+    .contenedor {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(9, auto);
+      grid-template-areas:
+        "valentin"
+        "imgValentin"
+        "descValentin"
+        "alone"
+        "imgAlone"
+        "descAlone"
+        "familia"
+        "imgFamilia"
+        "descFamilia";
+    }
+    .imgAlone {
+      justify-self: center;
+      align-self: center;
+    }
+    .imgValentin {
+      justify-self: center;
+      align-self: center;
+    }
+    .imgFamilia {
+      justify-self: center;
+      align-self: center;
+    }
+    .pagSuc {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(5, auto);
+      grid-template-areas:
+        "header"
+        "tiSuc"
+        "sucursales"
+        "mapa"
+        "footer";
+    }
+    .sucursales {
+      justify-self: center;
+    }
+    .sucursales {
+      justify-self: center;
+    }
+  }
