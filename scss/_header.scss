@@ -1,8 +1,8 @@
 header{
     background-color: $bg-fondo;
-    position: sticky;
-    top: 0px;
     z-index: 2;
+    position:sticky;
+    top: 0px;
     .logoPrincipal{
         display: flex;
         justify-content: center;
@@ -17,4 +17,8 @@ header{
             }
         }
     }
+}
+nav{
+    position:sticky;
+    top: 0px;
 }

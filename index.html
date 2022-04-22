@@ -43,16 +43,16 @@
                                 <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="./promociones.html">Promociones</a>
+                                <a class="nav-link" href="./pages/promociones.html">Promociones</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="./menu.html">Menú</a>
+                                <a class="nav-link" href="./pages/menu.html">Menú</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="./sucursales.html">sucursales</a>
+                                <a class="nav-link" href="./pages/sucursales.html">Sucursales</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="./somos.html">Conocenos</a>
+                                <a class="nav-link" href="./pages/somos.html">Conócenos</a>
                             </li>
                                     <!-- Dropdown -->
                                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -67,16 +67,16 @@
                         </ul>
                         <form class="d-flex">
                             <button class="btn btn-outline-success" type="button">
-                                <a style="text-decoration: none; color: white;" href="./formulario.html">Iniciar sesión</a></button>
+                                <a style="text-decoration: none; color: white;" href="./pages/formulario.html">Iniciar sesión</a></button>
                         </form>
                     </div>
                 </div>
             </nav>
     </header>
     <!-- Pagina de inicio, Bienvenida -->
-        <p class="bienvenida animate__animated animate__tada">¡Bienvenidos a Churropolis!</p>
-        <div class="portada">
-            <div id="carouselExampleCaptions" class="carousel slide mb-5"  data-bs-ride="carousel">
+        <p class="bienvenida animate__animated animate__tada">¡Bienvenid@s a Churropolis!</p>
+        <section class="portada d-flex justify-content-center">
+            <div id="carouselExampleCaptions" class="carousel slide mb-5 "  data-bs-ride="carousel">
                 <div class="carousel-indicators">
                     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
                         aria-current="true" aria-label="Slide 1"></button>
@@ -86,38 +86,18 @@
                         aria-label="Slide 3"></button>
                 </div>
                 <div class="carousel-inner">
-                    <div class="carousel-item active imagen">
-                        <img src="./images/Churropolis_churros_correcion_imagen.jpg" class="d-block imagen1" alt="Churropolis">
-                        <div class="carousel-caption d-none d-md-block bg-dark opacity-75 mx-auto">
-                            <h5>¡Visítanos a Churropolis!</h5>
-                            <p class="fw-bold">Disfruta de nuestras promociones en familia, pareja o solo</p>
-                        </div>
+                    <div class="carousel-item active">
+                        <img src="./images/Churropolis_churros_correcion_imagen.jpg" class="" alt="Churropolis">
                     </div>
                     <div class="carousel-item">
-                        <img src="./images/churrp_relleno_correcion_imagen.jpg" class="d-block imagen2" alt="Churro relleno">
-                        <div class="carousel-caption d-none d-md-block bg-dark opacity-75">
-                            <h5>¡Disfruta de nuestro Churro Relleno!</h5>
-                            <p>¡Sabores de Cajeta, chocolate, lechera, nutella y muchos más!</p>
-                        </div>
+                        <img src="./images/churrp_relleno_correcion_imagen.jpg" class=" " alt="Churro relleno">
                     </div>
                     <div class="carousel-item">
-                        <img src="./images/pan_relleno_correcion_imagen.jpg" class="d-block imagen3" alt="pan relleno">
-                        <div class="carousel-caption d-none d-md-block bg-dark opacity-75">
-                            <h5>¡La sensación!</h5>
-                            <p>¡Bolitas sabor a churro rellenas con tu sabor favorito!</p>
-                        </div>
+                        <img src="./images/pan_relleno_correcion_imagen.jpg" class=" " alt="pan relleno">
                     </div>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
             </div>
-        </div>
+        </section>
     <!-- FOOTER -->
     <footer class="footer">
         <h3>
@@ -127,6 +107,9 @@
             📱 Teléfono: 312-xxx-xxxx
             <br>
             🖨 @mail: churropolis_comida@example.com
+            <br>
+            Siguenos en
+            <a href="https://www.facebook.com/Churropoliss" target="blank">Facebook</a>
         </h3>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"

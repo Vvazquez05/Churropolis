@@ -14,23 +14,23 @@
     <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" href="./css/estilo.css">
-    <title>Menú Churropolis</title>
+    <link rel="stylesheet" href="/css/estilo.css">
+    <title>Sucursales Churropolis</title>
     <meta name="description"
-        content="Menú de churropolis, ven y prueba nuestros churros rellenos de cajeta, chocolate, fresa, nutella, miel y muchos sabores. Acompáñalos con ricas bebidas como: café, malteadas, frappes, té. Prueba los nuevos los bites de Churropolis">
-    <meta name="keywords" content="Menú churropolis, churros, churros rellenos, bebida, café, té, frappe, dulce">
+        content="Contamos con más de 5 sucursales distribuidos en el Estado de Colima, México. ¡Visítanos! Contáctanos: tel: 312-xxx-xxxx o al correo: churropolis@gmail.com">
+    <meta name="keywords" content="contactanos, sucursales churropolis, churros colima">
 </head>
-<body class="pagMenu">
+<body class="pagSuc">
     <!-- Encabezado de la página -->
     <header class="header">
         <div class="logoPrincipal">
-            <img class="Logo" id="logotipoImagen" src="./images/mainLogo_churros.PNG" alt="Logo de la empresa" width="400">
+            <img class="Logo" id="logotipoImagen" src="/images/mainLogo_churros.PNG" alt="Logo de la empresa" width="400">
         </div>
         <br>
         <!-- Lista de menú de navegación, -->
             <nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark">
                 <div class="container-fluid">
-                    <a class="navbar-brand" href="./index.html">Churropolis</a>
+                    <a class="navbar-brand" href="/index.html">Churropolis</a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
                         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
@@ -38,19 +38,19 @@
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                             <li class="nav-item">
-                                <a class="nav-link" aria-current="page" href="./index.html">Inicio</a>
+                                <a class="nav-link" aria-current="page" href="/index.html">Inicio</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="./promociones.html">Promociones</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link active" href="./menu.html">Menú</a>
+                                <a class="nav-link" href="./menu.html">Menú</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="./sucursales.html">sucursales</a>
+                                <a class="nav-link active" href="./sucursales.html">Sucursales</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="./somos.html">Conocenos</a>
+                                <a class="nav-link" href="./somos.html">Conócenos</a>
                             </li>
                             <!-- Dropdown -->
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -71,65 +71,23 @@
                 </div>
             </nav>
     </header>
-    <!-- MENU -->
-    <section>
-        <h1>
+    <!-- SUCURSALES -->
+    <h1 class="tiSuc">
         <strong>
-            Menú
+            Sucursales
         </strong>
     </h1>
-        <!-- Uso de Tablas -->
-    <table class="table table-dark table-hover mr-5 w-75 mx-auto">
-        <thead>
-            <tr>
-                <th scope="col">Platillo</th>
-                <th scope="col">Descripción</th>
-                <th scope="col">Precio c/u</th>
-                <th scope="col">imagen</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <th scope="row">Churro Sencillo</th>
-                <td>Churro de 25 cm de largo, espolvoreado con azucar morena. A elegir el dulce de su agrado: Lechera, cajeta, chocolate, fresa o nutella</td>
-                <td>$15.0 mxn</td>
-                <td><img src="./images/churro_sencillo.jfif" alt="imagen de comida" width="150px"></td>
-            </tr>
-            <tr>
-                <th scope="row">Churro relleno</th>
-                <td>Churro de 25 cm de largo, espolvoreado con azucar morena.Relleno a elegir: Lechera, cajeta, chocolate,
-                fresa o nutella</td>
-                <td>$25.0 mxn</td>
-                <td><img src="./images/churro_relleno.jfif" alt="imagen de comida" width="150px"></td>
-            </tr>
-            <tr>
-                <th scope="row">Bites de churros</th>
-                <td>Trozos de churros, espolvoreados con azucar y canela. Elegir dulce a elección: Lechera, cajeta, chocolate,
-                fresa o nutella</td>
-                <td>$35.0 mxn</td>
-                <td><img src="./images/bites_churros.jfif" alt="imagen de comida" width="150px"></td>
-            </tr>
-            <tr>
-                <th scope="row">Malteada</th>
-                <td>Malteada estilo Churropolis, Sabores: Fresa, Oreo, Clásica, Cajeta, Chocolate o Nuez</td>
-                <td>$45.0 mxn</td>
-                <td><img src="./images/malteada_2.jpg" alt="imagen de comida" width="150px"></td>
-            </tr>
-            <tr>
-                <th scope="row">Frappé</th>
-                <td>Frappé estilo Churropolis, Sabores: Fresa, Oreo, Clásica, Cajeta, Chocolate o Nuez con un toque de café y caramelo</td>
-                <td>$55.0 mxn</td>
-                <td><img src="./images/frappe.jpg" alt="imagen de comida" width="150px"></td>
-            </tr>
-            <tr>
-                <th scope="row">Café</th>
-                <td>Café de olla, 100% colimense</td>
-                <td>$25.0 mxn</td>
-                <td><img src="./images/cafe.PNG" alt="imagen de comida" width="150px"></td>
-            </tr>
-        </tbody>
-    </table>
-    </section>
+    <!-- LISTADO BOOTSTRAP -->
+        <div class="sucursales" style="z-index: 0;">
+            <ul class="list-group mb-2">
+                <li class="list-group-item active" aria-current="true" style="text-align: center;">SUCURSALES</li>
+                <li class="list-group-item">Colima</li>
+                <li class="list-group-item">Comala</li>
+                <li class="list-group-item">Cuauhtemoc</li>
+                <li class="list-group-item">Villa de Álvarez</li>
+            </ul>
+        </div>
+    <iframe class="mapa mb-5" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3766.2882299211387!2d-103.71851328400298!3d19.26982798697693!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x84255b57546a01e7%3A0x3c4296af63670fe5!2sChurropolis!5e0!3m2!1ses-419!2smx!4v1644520757335!5m2!1ses-419!2smx" width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
     <!-- FOOTER -->
     <footer class="footer">
         <h3>
@@ -139,6 +97,9 @@
             📱 Teléfono: 312-xxx-xxxx
             <br>
             🖨 @mail: churropolis_comida@example.com
+            <br>
+            Siguenos en
+            <a href="https://www.facebook.com/Churropoliss" target="blank">Facebook</a>
         </h3>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"

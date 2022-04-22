@@ -8,6 +8,7 @@ h1 {
 h2{
     color:white;
     text-align: center;
+    font-weight: bold;
     margin: 1rem;
     font-size: 2rem;
 }
@@ -22,10 +23,8 @@ h4{
     color: white;
     font-family: $font_text;
     margin: 5rem 3rem;
-    word-spacing: 2px;
     line-height: 1.5;
     font-size: 1.8rem;
-    text-align: justify;
 }
 // Estilo de fuente de página de Promociones
 .promoTitulo{

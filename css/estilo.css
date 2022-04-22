@@ -8,15 +8,19 @@ body {
 
 header {
   background-color: black;
+  z-index: 2;
   position: sticky;
-  top: 0px;
-  z-index: 2; }
+  top: 0px; }
   header .logoPrincipal {
     display: flex;
     justify-content: center;
     top: 5px; }
   header nav ul li:hover {
     background-color: #752403; }
+
+nav {
+  position: sticky;
+  top: 0px; }
 
 .bienvenida {
   margin: 2rem;
@@ -43,31 +47,15 @@ header {
   100% {
     opacity: 0; } }
 
-.imagen, .portada .imagen1, .portada .imagen2, .portada .imagen3 {
-  margin: 1rem;
-  transition: all 0.7s; }
-
 .portada {
-  display: flex;
+  display: block;
   flex-wrap: wrap;
   justify-content: space-around; }
-  .portada .imagen1 {
-    border: 3px white solid; }
-    .portada .imagen1:hover {
-      transform: scale(1.1, 1.5); }
-  .portada .imagen2 {
-    border: 5px yellow dotted; }
-    .portada .imagen2:hover {
-      transform: scale(1.2, 1.2); }
-  .portada .imagen3 {
-    border: 5px red solid; }
-    .portada .imagen3:hover {
-      transform: scale(1.1, 1.1); }
 
 footer {
   width: 100%;
   margin: 0 auto;
-  margin-bottom: 10px;
+  margin-bottom: 0;
   background: #406eed;
   background: -webkit-linear-gradient(to right, #406eed 0%, #e8933f 100%);
   background: -moz-linear-gradient(to right, #406eed 0%, #e8933f 100%);
@@ -171,6 +159,7 @@ h1 {
 h2 {
   color: white;
   text-align: center;
+  font-weight: bold;
   margin: 1rem;
   font-size: 2rem; }
 
@@ -185,10 +174,8 @@ h4 {
   color: white;
   font-family: "Courier Prime", monospace;
   margin: 5rem 3rem;
-  word-spacing: 2px;
   line-height: 1.5;
-  font-size: 1.8rem;
-  text-align: justify; }
+  font-size: 1.8rem; }
 
 .promoTitulo {
   font-family: "Fredoka One", cursive;
