@@ -47,11 +47,6 @@ nav {
   100% {
     opacity: 0; } }
 
-.portada {
-  display: block;
-  flex-wrap: wrap;
-  justify-content: space-around; }
-
 footer {
   width: 100%;
   margin: 0 auto;
